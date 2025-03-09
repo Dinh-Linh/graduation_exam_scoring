@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">exam_scoring</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Đăng nhập</string>
+    <string name="username_and_password">Nhập tên đăng nhập và mật khẩu</string>
+    <string name="password">Mật khẩu</string>
+    <string name="username">Tên đăng nhập</string>
+    <string name="email">Email</string>
+    <string name="class_n">Lớp 11A1</string>
+    <string name="your_class">Lớp học của bạn</string>
+    <string name="content_test">Kiểm tra 15 phút</string>
+    <string name="test_code">AB134</string>
+    <string name="list_test">Danh sách bài kiểm tra</string>
+    <string name="list_student">Danh sách học sinh</string>
+    <string name="class_code">A1K40PHT</string>
+    <string name="result">Điểm</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/listClassFragment">
+
+    <fragment
+        android:id="@+id/listClassFragment"
+        android:name="com.example.exam_scoring.ui.fragment.ClassesFragment"
+        android:label="fragment_list_class"
+        tools:layout="@layout/fragment_classes" >
+        <action
+            android:id="@+id/action_listClassFragment_to_listTestFragment"
+            app:destination="@id/listTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listTestFragment"
+        android:name="com.example.exam_scoring.ui.fragment.ExamsFragment"
+        android:label="fragment_list_test"
+        tools:layout="@layout/fragment_exams" >
+        <action
+            android:id="@+id/action_listTestFragment_to_examResultsFragment"
+            app:destination="@id/examResultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/examResultsFragment"
+        android:name="com.example.exam_scoring.ui.fragment.ExamResultsFragment"
+        android:label="fragment_exam_results"
+        tools:layout="@layout/fragment_exam_results" >
+        <action
+            android:id="@+id/action_examResultsFragment_to_dialogScoring"
+            app:destination="@id/dialogScoring" />
+    </fragment>
+    <dialog
+        android:id="@+id/dialogScoring"
+        android:name="com.example.exam_scoring.ui.fragment.DialogScoring"
+        android:label="DialogScoring" />
+</navigation>
